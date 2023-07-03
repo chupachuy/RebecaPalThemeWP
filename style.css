@@ -1,0 +1,226 @@
+/*
+Theme Name:     Rebeca Pal V2
+Author:         Jesús  López Velázquez
+Author URI:     https://rechydzenio.com.mx
+Description:    Tema para Rebeca Pal 
+Version:        1.0
+Text Domain:    RebecaPal
+WordPress Available:  yes
+Requires License:    no
+*/
+
+
+/**** NAV ****/
+
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+a, a:visited, a:link{
+  color: #7f8d8c;
+  text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5{
+  color: #7f8d8c;
+}
+
+p{
+
+  font-size: 1.2em !important;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+      font-weight: 400;
+    font-size: 1.4em;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: red;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: red !important;
+    background-color: #ffffff !important;
+}
+
+.separar{
+	clear: both;
+	height: 10px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.limpiar{
+  clear: both;
+}
+
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+
+/*** PRELOADER ***/
+.preloader{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+  /*background-color: #000;*/
+  z-index: 100;
+}
+
+
+.preloader:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ed5565;
+  transition: 2s;
+}
+
+.preloader.complete:before{
+  left: -50%;
+
+}
+
+
+.preloader:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ed5565;
+  transition: 2s;
+}
+
+
+.preloader.complete:after{
+  right: -50%;
+}
+
+
+#loader {
+  position: absolute;
+  transition: 2s;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -75px 0 0 -75px;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  border-top: 6px solid #ed5565;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/********************/
+
+/*** Hover images galeria **/
+
+.post-item{
+    margin-bottom: 17px;
+}
+
+[class^='imghvr-'],
+[class*=' imghvr-']{
+  max-height: 220px;
+  margin-bottom: 17px;
+}
+
+
+[class^='imghvr-'] .img-responsive,
+[class*=' imghvr-'] .img-responsive{
+  margin-bottom: 0 !important;
+}
+
+[class^='imghvr-'] h3,
+[class*=' imghvr-'] h3{
+  text-align: center;
+}
+
+
+/*** VIDEOS ***/
+
+
+.videos{
+  padding:10px;
+}
+
+
+/*** SOCIAL Footer **/
+
+
+
+.social-footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.social-footer li {
+  display: inline;
+}
+
+.social-footer li a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-footer li a {
+    color: #000;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.social-footer li a:hover {
+    color: red;
+}
